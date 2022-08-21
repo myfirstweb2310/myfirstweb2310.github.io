@@ -41,6 +41,9 @@
         display: inline-block;
     }
 
+    #header .logo-1 {
+        display: none;
+    }
 
 }
 
@@ -107,6 +110,7 @@
     .contact-form {
         margin-top: 32px ;
     }
+
 }
 
 

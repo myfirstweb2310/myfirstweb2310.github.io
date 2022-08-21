@@ -40,6 +40,10 @@ html {
     float: right !important;
 }
 
+.center {
+    top: 50%;
+}
+
 .btn{
     color: #fff;
     background-color: #000;
@@ -104,15 +108,33 @@ html {
 
 }
 
+#sub-header {
+    position: relative;
+    height: 46px;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: #f07525;
+}
 
 #header {
-    position: fixed;
-    height: 46px;
+    position: sticky;
+    position: -webkit-sticky;
+    height: 61px;
     top: 0;
     left: 0;
     right: 0;
     background-color: #000;
     z-index: 1;
+}
+
+.logo-1 {
+    width: 200px;
+    vertical-align: middle;
+}
+
+.logo-1:hover {
+    cursor: pointer;
 }
 
 #nav {
@@ -132,13 +154,13 @@ html {
 }
 
 #nav > li > a { 
-    color: #fff;
+    color: #243c85;
     text-transform: uppercase;
 }
 
 #nav li a {
     text-decoration: none;
-    line-height: 46px;
+    line-height: 61px;
     padding: 0px 24px;
     display: block;
 
@@ -189,7 +211,7 @@ html {
 
 #header .search-btn:hover {
     cursor: pointer;
-    background-color: #f44336;
+    background-color: #fff;
 }
 
 #header .mobile-menu-btn:hover {
@@ -202,14 +224,13 @@ html {
 
 #header .menu-icon,
 #header .search-icon {
-    color: #fff;
+    color: #f07525;
     font-size: 20px;
-    line-height: 46px;
+    line-height: 61px;
 }
 
 #slider {
     position: relative;
-    margin-top: 46px;
     padding-top: 50%;
     background: url('../img/slider/slider_1.jpg') top center / cover no-repeat;
 }
