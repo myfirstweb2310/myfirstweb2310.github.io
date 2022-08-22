@@ -120,7 +120,7 @@ html {
 #header {
     position: sticky;
     position: -webkit-sticky;
-    height: 61px;
+    height: 64px;
     top: 0;
     left: 0;
     right: 0;
@@ -154,6 +154,20 @@ html {
     color: #fff;
 }
 
+#nav-2 li::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    border-right: 1px solid rgba(255,255,255,.1);
+    height: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#nav-2 li:first-child::after {
+    border: none;
+}
+
 .hotline-header {
     width: 150px;
     vertical-align: middle;
@@ -164,7 +178,7 @@ html {
 }
 
 #nav-2 li:last-child {
-    margin-right: 60px;
+    margin-right: 40px;
 }
 
 
@@ -207,7 +221,7 @@ html {
 
 #nav > li:hover > a,
 #nav .subnav li:hover a{
-    color: #000;
+    color: #f07525;
     background-color: #ccc;
 }
 
@@ -216,7 +230,7 @@ html {
     position: absolute;
     top: 100%;
     left: 0px;
-    min-width: 250px;
+    min-width: 260px;
     background-color: #626262;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
