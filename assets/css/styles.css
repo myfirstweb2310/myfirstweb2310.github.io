@@ -110,7 +110,7 @@ html {
 
 #sub-header {
     position: relative;
-    height: 46px;
+    height: 48px;
     top:0;
     left: 0;
     right: 0;
@@ -137,6 +137,41 @@ html {
     cursor: pointer;
 }
 
+
+#nav-2 {
+    display: inline-block;
+}
+
+#nav-2 li {
+    position: relative;
+    display: inline-block;
+}
+
+#nav-2 li a {
+    text-decoration: none;
+    line-height: 48px;
+    padding: 0px 16px;
+    color: #fff;
+}
+
+.hotline-header {
+    width: 150px;
+    vertical-align: middle;
+}
+
+#nav-2 li:first-child {
+    margin-left: 640px;
+}
+
+#nav-2 li:last-child {
+    margin-right: 60px;
+}
+
+
+#nav-2 > li:hover a {
+    color: #243c85;
+}
+
 #nav {
     display: inline-block;
 }
@@ -156,6 +191,7 @@ html {
 #nav > li > a { 
     color: #243c85;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 #nav li a {
@@ -163,8 +199,8 @@ html {
     line-height: 61px;
     padding: 0px 24px;
     display: block;
-
 }
+
 #nav li:hover .subnav {
     display: block;
 }
@@ -181,7 +217,7 @@ html {
     top: 100%;
     left: 0px;
     min-width: 250px;
-    background-color: #fff;
+    background-color: #626262;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 }
@@ -194,6 +230,27 @@ html {
 
 #nav .nav-arrow-down {
     font-size: 14px;
+}
+
+#header .small-pic,
+#header .small-pic-1,
+#header .small-pic-2 {
+    width: 100px;
+    vertical-align: middle;
+}
+
+#header .small-pic-1 {
+    width: 75px;
+}
+
+#header .small-pic-2 {
+    width: 15px;
+}
+
+#header .small-pic:hover,
+#header .small-pic-1:hover,
+#header .small-pic-2:hover {
+    cursor: pointer;
 }
 
 #header .mobile-menu-btn {
