@@ -32,6 +32,10 @@ html {
     color: #fff !important;
 }
 
+.icon-white {
+    color: #fff !important;
+}
+
 .text-center {
     text-align: center !important;
 }
@@ -108,6 +112,7 @@ html {
 
 }
 
+/* Start:Sub-header */
 #sub-header {
     position: relative;
     height: 48px;
@@ -115,17 +120,6 @@ html {
     left: 0;
     right: 0;
     background-color: #f07525;
-}
-
-#header {
-    position: sticky;
-    position: -webkit-sticky;
-    height: 64px;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    z-index: 1;
 }
 
 .logo-1 {
@@ -184,6 +178,20 @@ html {
 
 #nav-2 > li:hover a {
     color: #243c85;
+}
+/* End:Sub-header */
+
+/* Start:Header */
+
+#header {
+    position: sticky;
+    position: -webkit-sticky;
+    height: 64px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 1;
 }
 
 #nav {
@@ -299,6 +307,48 @@ html {
     font-size: 20px;
     line-height: 61px;
 }
+/* End: Header */
+
+/* Begin: Social */
+
+#social-bar {
+    position: fixed;
+    width: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#social li {
+
+}
+
+.icon-distance {
+    margin-left: 30px;
+}
+
+#social li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    margin-bottom: 2px;
+    background-color: rgba(32, 49, 127, 0.87);
+    line-height: 30px;
+    font-weight: 60;
+    text-align: right;
+    border-radius: 0 30px 30px 0;
+}
+
+.social-element:hover .ti-common{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5;
+    margin-left: 0;
+}
+
+/* End: Social */
 
 #slider {
     position: relative;
