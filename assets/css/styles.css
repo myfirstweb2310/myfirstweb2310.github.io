@@ -364,6 +364,7 @@ html {
     background-size: 100%;
 }
 
+/* Begin:Content */
 #content {
     position: relative;
     height: 200px;
@@ -429,6 +430,7 @@ html {
     left: 0;
     right: 0;
 }
+/* End:Content */
 
 /* Footer section */
 #footer {
