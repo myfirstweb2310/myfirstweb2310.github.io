@@ -193,7 +193,7 @@ html {
     left: 0;
     right: 0;
     background-color: #000;
-    z-index: 1;
+    z-index: 3;
 }
 
 #nav {
@@ -219,12 +219,12 @@ html {
     line-height: 61px;
     padding: 0px 24px;
     display: block;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.047);
 }
 
 #nav li:hover .subnav {
     transition: all 0.5s;
     display: block;
+    z-index: 3;
 }
 
 #nav > li:hover > a,
@@ -240,15 +240,39 @@ html {
     top: 100%;
     left: 0px;
     min-width: 260px;
+    height: var(--subnav-1);
     list-style-type: none;
     background-color: #626262;;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    animation: growth ease-in 0.25s;
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        height: calc(var(--subnav-1) - 50%)
+    }
+    to {
+        opacity: 1;
+        height: calc(var(--subnav-1))
+    }
 }
 
 #nav .subnav a {
     color: #fff;
     padding: 0 12px;
     line-height: 38px;
+    z-index: 3;
+}
+
+#nav .subnav li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+#nav .subnav li:last-child {
+    border: none;
 }
 
 #nav .nav-arrow-down {
@@ -366,14 +390,12 @@ html {
 
 /* Begin:Content */
 #content {
-    position: relative;
     height: 200px;
     margin-top: -50px;
-    z-index: 1;
 }
 
 .hold-content {
-    display: inline-block;
+    display: inline-flex;
     position: relative;
     margin: 0 20px 0;
     min-width: 195px;
@@ -382,7 +404,8 @@ html {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 5px 10px 0px #f4eae1;
-    z-index: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #content .hold-content:first-child {
@@ -432,10 +455,101 @@ html {
 }
 /* End:Content */
 
+/* Start: Information */
+#inf {
+    display: flex;
+    background-color: rgb(255, 252, 249);
+}
+
+.info-pic {
+    width:250px;
+}
+
+.inline-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.info-flex {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.icon-color {
+    color: #f07525;
+    font-size: 20px;
+    margin-top: 3px;
+    margin-right: 5px;
+    
+}
+
+.font-inf {
+    font-size: 15px;
+    color: #243c85;
+    text-decoration: none;
+    line-height: 25px;
+    font-weight: 550;
+}
+
+.inf-margin {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #243c85;
+}
+
+.address  {
+    flex: 3;
+    margin-left: 150px;
+}
+
+.khcn {
+    flex: 2;
+}
+
+.khdn {
+    flex: 2.5;
+}   
+
+.intro {
+    flex: 1;
+}
+
+.sub-service {
+    flex: 2;
+    margin-right: 150px;
+}
+
+#inf a:hover {
+    color: #f07525;
+}
+
+.contact {
+    margin-bottom: 50px;
+}
+
+.service-pic {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.service-pic-network {
+    width: 50px;
+    margin: 0 5px;
+    text-align:center;
+}
+/* End: Information */
+
 /* Footer section */
 #footer {
-    padding: 64px 16px;
+    padding: 32px 16px;
+    margin-top: 10px;
     text-align: center;
+    background-color:#f6680ae4;
 }
 
 #footer .socials-list {
@@ -453,9 +567,9 @@ html {
 
 #footer .copyright {
     margin-top: 15px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 #footer .copyright a {
-    color: rgba(0, 0, 0, 0.6);    
+    color: rgba(255, 255, 255, 0.6);    
 }
