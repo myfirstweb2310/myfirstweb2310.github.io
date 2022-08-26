@@ -6,10 +6,6 @@
 
 /* Tablet and Mobile */
 @media (max-width: 63.9375em) {
-    btn {
-        padding: 15px 16px;
-    }
-
     #nav .subnav a{
         padding : 5px 12px;
     }
@@ -56,6 +52,25 @@
 
 /* Mobile */
 @media (max-width: 46.1875em) {
+    #sub-header {
+        display: none;
+    }
+
+    #social-bar {
+        display: none;
+    }
+
+    #social-mobile-open {
+        display: block;
+        position: fixed;
+        width: 150px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+
+    
+
     .s-full-width,
     .s-col-full {
         width: 100%;
@@ -65,9 +80,14 @@
         margin-top: 8px !important;
     }
 
-    #header {
+    #header,
+    #sub-header,
+    #slider,
+    #content,
+    #inf {
         overflow: hidden;
     }
+    
 
     #header .mobile-menu-btn {
         display: block;
