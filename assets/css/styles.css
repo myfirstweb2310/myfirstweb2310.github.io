@@ -219,7 +219,7 @@ html {
     position: absolute;
     top: 100%;
     left: 0px;
-    width: 500px;
+    min-width: 200px;
     min-height: 160px;
     list-style-type: none;
     background-color: #626262;;
@@ -317,7 +317,13 @@ html {
     line-height: 61px;
 }
 /* End: Header */
-
+.opacity {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 /* Begin: Social */
 
 #social-bar {
@@ -381,28 +387,27 @@ html {
 #content {
     height: 200px;
     margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.include-content {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    min-width: 1200px;
 }
 
 .hold-content {
-    display: inline-flex;
     position: relative;
-    margin: 0 20px 0;
     min-width: 195px;
     height: 130px;
     padding:10px 15px 15px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 5px 10px 0px #f4eae1;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-#content .hold-content:first-child {
-    margin-left: 209.6px;
-}
-
-#content .hold-content:last-child {
-    margin-right: 209.6px;
 }
 
 #content .img-quickview {
