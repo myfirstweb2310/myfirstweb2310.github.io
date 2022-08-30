@@ -468,7 +468,6 @@ html {
 .info-flex {
     display: inline-flex;
     flex-direction: column;
-    margin-right: 20px;
 }
 
 .icon-color {
@@ -497,25 +496,7 @@ h1 {
 }
 
 .address  {
-    flex: 3;
-    margin-left: 150px;
-}
-
-.khcn {
-    flex: 2;
-}
-
-.khdn {
-    flex: 2.5;
-}   
-
-.intro {
-    flex: 1;
-}
-
-.sub-service {
-    flex: 2;
-    margin-right: 150px;
+    margin-left: min(150px,2%);
 }
 
 #inf a:hover {

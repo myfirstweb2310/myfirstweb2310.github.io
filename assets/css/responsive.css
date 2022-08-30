@@ -11,6 +11,13 @@
 
 /* Tablet and Mobile */
 @media (max-width: 63.9375em) {
+    #header,
+    #sub-header,
+    #slider,
+    #inf {
+        overflow: hidden;
+    }
+
     #nav .subnav a{
         padding : 5px 12px;
     }
@@ -33,6 +40,9 @@
         display: none;
     }
 
+    .info-flex {
+        margin-right: 0;
+    }
 }
 
 /* Tablet */
@@ -40,15 +50,23 @@
     .form-info {
         line-height: 2;
     }
+
+    #header,
+    #sub-header,
+    #slider,
+    #content,
+    #inf {
+        overflow: hidden;
+    }
+
+    .inf * {
+        flex:0;
+    }
 }
 
 /* Mobile */
 @media (max-width: 46.1875em) {
     #sub-header {
-        display: none;
-    }
-
-    #social-bar {
         display: none;
     }
 
@@ -144,11 +162,20 @@
     }
 
     #inf {
-        display: none;
+        margin-left: 8vw;
+        flex-direction: column;
     }
 
-    #footer {
-        display: none;
+    .address {
+        margin-left: 0;
+    }
+
+    .info-flex {
+        margin-top: 10px;
+    }
+
+    .fi-serv{
+        margin: auto;
     }
 }
 
