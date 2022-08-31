@@ -106,6 +106,7 @@ html {
 .logo-1 {
     width: 200px;
     vertical-align: middle;
+    padding: 8px 0;
 }
 
 .logo-1:hover {
@@ -174,6 +175,7 @@ html {
     right: 0;
     background-color: #000;
     z-index: 3;
+
 }
 
 #nav {
@@ -385,19 +387,20 @@ html {
 
 /* Begin:Content */
 #content {
-    height: 200px;
+    max-height: 400px;
     margin-top: -50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .include-content {
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    min-width: 1200px;
+    width: 1200px;
+    min-width: 10%;
 }
 
 .hold-content {
@@ -468,6 +471,7 @@ html {
 .info-flex {
     display: inline-flex;
     flex-direction: column;
+    margin: 0 2px;
 }
 
 .icon-color {
