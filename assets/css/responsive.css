@@ -16,18 +16,17 @@
         padding : 5px 12px;
     }
 
+    #nav li a {
+        line-height: 48px;
+    }
+
+    #nav .subnav a {
+        line-height: 32px;
+    }
+    
     .socials-list {
         font-size: 48px;
         margin:0 8px ;
-    }
-
-    #footer .socials-list a {
-        margin: 0 8px;
-    }
-
-    #footer .copyright a {
-        padding: 12px 0;
-        display: inline-block;
     }
 
     .info-flex {
@@ -37,20 +36,21 @@
     .hold-content {
         margin: 0 5px;
     }
-
-    #nav li a {
-        line-height: 48px;
+    
+    #footer .socials-list a {
+        margin: 0 8px;
     }
 
-    #nav .subnav a {
-        line-height: 32px;
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
     }
 }
 
 /* Tablet */
 @media (min-width: 46.25em) and (max-width: 84.375em) {
-    .form-info {
-        line-height: 2;
+    #nav-2 li:first-child {
+        margin-left: 0;
     }
 
     #header {
@@ -63,10 +63,6 @@
 
     #header .search-btn {
         display: none;
-    }
-
-    #nav-2 li:first-child {
-        margin-left: 0;
     }
 
     #nav {
@@ -104,27 +100,17 @@
 
 /* Mobile */
 @media (max-width: 46.1875em) {
-    #sub-header {
-        display: none;
-    }
-
     #nav .subnav {
     width: 500px;
+    }
+
+    #sub-header {
+        display: none;
     }
 
     #social-mobile-open {
     min-width: 200px;
     }
-
-    .s-full-width,
-    .s-col-full {
-        width: 100%;
-    }
-
-    .s-mt-16 {
-        margin-top: 8px !important;
-    }
-    
 
     #header .mobile-menu-btn {
         display: block;
@@ -207,6 +193,10 @@
 
     .fi-serv{
         margin: auto;
+    }
+
+    .logo-1 {
+        width: 265px;
     }
 }
 
