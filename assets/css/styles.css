@@ -487,6 +487,7 @@ html {
     font-size: 15px;
     color: #243c85;
     text-decoration: none;
+    -webkit-text-decoration-line: none;
     line-height: 25px;
     font-weight: 550;
 }
